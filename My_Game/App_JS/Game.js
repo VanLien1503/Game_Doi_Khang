@@ -50,9 +50,11 @@ function drawGame() {
 // gọi hàm máu cho quái vật
     drawMauQV();
     drawManaQV();
+
+
 // vẽ chữ tiêu hao vitality cho nhân vật
-    drawVitalityB();
-    drawVitalityA();
+//     drawVitalityB();
+//     drawVitalityA();
 
 // check game
     checkWin();
