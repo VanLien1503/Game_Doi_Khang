@@ -135,11 +135,11 @@ function drawFigure_01() {
 //check điều kiện chuyển ảnh
 let checkImgA = function () {
     if (nhanVatA.checkGame === false) {
-        imgFirstA();
+        drawFigure_01();
     } else if (nhanVatA.checkKill) {
         //gọi hình ảnh kill ra
         killNhanVat();
-        drawFigure_01();
+        imgFirstA();
     } else {
         // gọi hình ảnh đánh thường
         moveTo1();
@@ -191,10 +191,10 @@ function drawFigure_02() {
 // check Điều Kiện chuyển anh cho Quái Vật
 let checkImgB = function () {
     if (nhanVatB.checkGame === false) {
-        imgFirsQV();
+        drawFigure_02();
     } else if (nhanVatB.checkKill) {
         killQuaiVat();
-        drawFigure_02();
+        imgFirsQV();
     } else {
         QvMoveTo();
     }
@@ -221,3 +221,8 @@ setInterval(function () {
         }
     }
 }, 5);
+// check imgVitality
+function checkImgVitality() {
+    drawVitalityA();
+    drawVitalityB();
+}

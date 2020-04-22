@@ -53,8 +53,8 @@ function drawGame() {
 
 
 // vẽ chữ tiêu hao vitality cho nhân vật
-//     drawVitalityB();
-//     drawVitalityA();
+    drawVitalityB();
+    drawVitalityA();
 
 // check game
     checkWin();
